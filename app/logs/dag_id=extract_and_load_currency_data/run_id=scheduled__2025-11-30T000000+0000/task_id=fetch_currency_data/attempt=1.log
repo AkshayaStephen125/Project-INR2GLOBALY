@@ -1,0 +1,11 @@
+{"timestamp":"2025-11-30T15:22:20.913899Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-30T15:22:20.916650Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/app.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-30T15:22:21.241098Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:21.241630Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:21.242329Z","level":"info","event":"Current task name:fetch_currency_data","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:21.242705Z","level":"info","event":"Dag name:extract_and_load_currency_data","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:22.380696Z","level":"info","event":"{'date': '2025-11-30', 'from': 'INR', 'rates': {'AUD': 0.0171, 'BGN': 0.0189, 'BRL': 0.0597, 'CAD': 0.0157, 'CHF': 0.009, 'CNY': 0.0791, 'CZK': 0.2336, 'DKK': 0.0722, 'EUR': 0.0097, 'GBP': 0.0085, 'HKD': 0.087, 'HUF': 3.6857, 'IDR': 186.1917, 'ILS': 0.0364, 'INR': 1, 'ISK': 1.432, 'JPY': 1.7448, 'KRW': 16.4248, 'MXN': 0.205, 'MYR': 0.0462, 'NOK': 0.1137, 'NZD': 0.0196, 'PHP': 0.6556, 'PLN': 0.041, 'RON': 0.0492, 'SEK': 0.106, 'SGD': 0.0145, 'THB': 0.3598, 'TRY': 0.4749, 'USD': 0.0112, 'ZAR': 0.1913}}","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:22.442505Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-30T15:22:22.476982Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:22.477502Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-30T15:22:22.478450Z","level":"info","event":"Task operator:<Task(PythonOperator): fetch_currency_data>","logger":"task.stdout"}

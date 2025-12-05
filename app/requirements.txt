@@ -1,0 +1,4 @@
+pandas
+requests
+apache-airflow-providers-postgres==5.5.0
+openpyxl

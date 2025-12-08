@@ -162,9 +162,6 @@ task_insert_currency_data = PythonOperator(
     dag=dag,
 )
 
-# check_master_table >> task_create_master_table >> task_insert_master_data
-# check_master_table >> [task_create_master_table >> task_insert_master_data, task_skip_create_table]
 check_master_table >> [task_create_master_table, task_skip_create_table]
 task_create_master_table >> task_insert_master_data
-# check_master_table >> [task_create_master_table, task_skip_create_table]
 task_fetch_currency_data >> task_create_table >> task_insert_currency_data
